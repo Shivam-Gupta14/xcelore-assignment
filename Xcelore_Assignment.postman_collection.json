@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "c4867abf-cf5c-488a-b3ac-756d4e4173f4",
+		"name": "Xcelore_Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38927662"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/doctors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. John\",\r\n    \"city\": \"Delhi\",\r\n    \"email\": \"john@example.com\",\r\n    \"phoneNumber\": \"9876543210\",\r\n    \"speciality\": \"Orthopaedic\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/suggestions/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. John\",\r\n    \"city\": \"Delhi\",\r\n    \"email\": \"john@example.com\",\r\n    \"phoneNumber\": \"9876543210\",\r\n    \"speciality\": \"Orthopaedic\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/suggestions/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"suggestions",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
